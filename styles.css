@@ -295,7 +295,8 @@ h3 {
 .project-card,
 .supporting-project,
 .skill-columns > div,
-.timeline-item {
+.timeline-item,
+.submission-grid article {
   border: 1px solid var(--line-dark);
   border-radius: 8px;
   background: var(--panel-strong);
@@ -411,6 +412,37 @@ h3 {
   padding: 24px;
 }
 
+.capstone-section {
+  background: #f7faf6;
+}
+
+.submission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.submission-grid article {
+  padding: 28px;
+  box-shadow: 0 18px 44px rgba(22, 32, 28, 0.07);
+}
+
+.submission-step {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin-bottom: 20px;
+  border-radius: 999px;
+  background: rgba(72, 199, 142, 0.14);
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.submission-grid p {
+  color: var(--ink-muted);
+}
+
 .timeline-section {
   background: #eef3ee;
 }
@@ -485,6 +517,7 @@ h3 {
 
   .intro-band,
   .skill-columns,
+  .submission-grid,
   .timeline {
     grid-template-columns: 1fr 1fr;
   }
@@ -540,6 +573,7 @@ h3 {
 
   .intro-band,
   .skill-columns,
+  .submission-grid,
   .timeline {
     grid-template-columns: 1fr;
   }
